@@ -1,3 +1,4 @@
 *.csharp linguist-detectable=true
 *.xml linguist-detectable=true
 *.assembly linguist-detectable=false
+*.pawn linguist-detectable=false
