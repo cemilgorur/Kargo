@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kargo.Master.MyMenu"
+             >
+    <StackLayout>
+        <ListView x:Name="lstMenu" ItemSelected="lstMenu_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Padding="10" Spacing="20" VerticalOptions="Start"
+                    HorizontalOptions="StartAndExpand">
+                            <StackLayout >
+                                <Grid>
+                                    <Image Source="{Binding Image}"  HeightRequest="20" WidthRequest="20" Grid.Row="0" Margin="0,0,125,0"  >
+                                   </Image> 
+                               
+                            <Label x:Name="analbl" Text="{Binding Name}" Grid.Row="0" TextColor="Black" FontSize="20" 
+                   Padding="120,0,0,0" ></Label>  
+                    </Grid>            
+              </StackLayout>
+                    </StackLayout>      
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
+       </StackLayout>
+</ContentPage>          
+                               
+               
+            
+                 
+ 
+                       
+
+

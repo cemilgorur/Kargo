@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Kargo.Views.Cari"  
+             BackgroundImageSource="detail.png"
+             >
+    <StackLayout>
+        <StackLayout>
+            <SearchBar x:Name="Searcher"  HorizontalOptions="Start" VerticalOptions="Start">
+            </SearchBar>
+        </StackLayout>
+        <ListView x:Name="lstCari" ItemTapped="lstCari_ItemTapped">
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,10,0,0">
+                            <Label Text="{Binding Name}" FontSize="20"
+                VerticalOptions="Center" FontAttributes="Bold" Margin="10,0,0,0"
+                HorizontalOptions="Center" 
+                                WidthRequest="350"
+                                ></Label>
+                            <Button  x:Name="ColorBtn"
+                VerticalOptions="Start" BackgroundColor="Red" IsEnabled="False"
+                HorizontalOptions="Center" WidthRequest="20"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
+    
+    

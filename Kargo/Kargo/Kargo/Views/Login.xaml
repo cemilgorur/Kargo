@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Kargo.Views.Login" BackgroundImageSource="loginresim.png "
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content >
+        <StackLayout Orientation="Vertical"
+            >
+            <Image Source="logoo.png" HorizontalOptions="Center" VerticalOptions="Center"
+                   WidthRequest="100" HeightRequest="100" Margin="0,30,0,0">
+
+            </Image>
+            
+            <StackLayout Padding="50,50,50,100" 
+                         Orientation="Vertical">
+
+                <Grid ColumnSpacing="1 " HorizontalOptions="FillAndExpand" >
+                    
+                    <Image Source="user.png" HorizontalOptions="Start"  Grid.Row="0" Margin="12"  VerticalOptions="Start"
+                   WidthRequest="20" HeightRequest="20" InputTransparent="True" BackgroundColor="Transparent">
+
+                </Image>
+
+                <Entry
+                 Placeholder="Kullanıcı Adı" x:Name="id" TextColor="White"  Grid.Row="0" Margin="30,0,0,0" PlaceholderColor="White" FontAttributes="Bold" 
+               WidthRequest="100">
+                    </Entry>
+                </Grid>
+                
+               
+            <StackLayout  Orientation="Vertical" >
+                    <Grid HorizontalOptions="FillAndExpand">
+
+
+                        <Image Source="password.png" HorizontalOptions="Start" Grid.Row="0" Margin="12"  VerticalOptions="Start"
+                   WidthRequest="20" HeightRequest="20" BackgroundColor="Transparent">
+                    
+                </Image>
+
+
+                        <Entry 
+                        Placeholder="Şifre" x:Name="pass" PlaceholderColor="White" Grid.Row="0" Margin="30,0,0,0"  TextColor="White" FontAttributes="Bold"
+                  WidthRequest="30">
+                            
+                        </Entry>
+                    
+                    </Grid>
+                    <StackLayout Margin="50">
+                        <Button 
+                    Text="GİRİŞ"
+                        BackgroundColor="#0884cc"
+                        TextColor="White"
+                      
+                       
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        CornerRadius="10"
+                        Clicked="Button_Clicked"
+                            
+                    ></Button>
+                    </StackLayout>
+            </StackLayout> </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

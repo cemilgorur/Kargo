@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Kargo.Views.CariDetay"
+             BackgroundImageSource="detail.png"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Düzenle" Clicked="ToolbarItem_Clicked"  />
+    </ContentPage.ToolbarItems>
+
+
+
+
+    <StackLayout Orientation="Vertical" Padding="0,10,0,0">
+        <ListView x:Name="lstDetay" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                  RowHeight="100" IsEnabled="False">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding  urun}"
+               ></Label>
+                        <Label Text="{Binding adres}" 
+                 ></Label>
+                        <Label Text="{Binding date}" >
+                 </Label> 
+                  
+                        </StackLayout>
+                        
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+                    
+ 
+       
+
+
+        <CheckBox x:Name="checkBox" HorizontalOptions="End" VerticalOptions="End"
+                                         
+                                    ></CheckBox>
+        <Button BackgroundColor="OrangeRed"   CornerRadius="10" HorizontalOptions="End" VerticalOptions="End" x:Name="btnSave" 
+                                 Text="Kaydet" Clicked="Button_Clicked">
+
+        </Button>
+
+    </StackLayout>
+
+
+
+
+
+
+
+</ContentPage>
