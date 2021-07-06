@@ -1,5 +1,1 @@
-* text=auto
-*.csharp linguist-detectable=true
-*.xml linguist-detectable=true
-*.asm linguist-detectable=false
-*.pawn linguist-detectable=false
+ *.* linguist-language=Csharp
